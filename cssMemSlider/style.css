@@ -45,9 +45,15 @@ input {
   border: 0.190rem solid cyan;
   border-radius: 50%;
   transition: 1s;
+  background-color: cyan;
 }
-.input-btn:hover{
-  border: 0.190rem solid green;
+.label:hover .input-btn {
+  border: 0.190rem solid white;
+  background-color: white;
+}
+.label:active .input-btn {
+  border: 0.190rem solid yellow;
+  background-color: yellow;
 }
 #slider1:checked ~ .slider .img{
   transform: translateX(0%);
@@ -63,19 +69,19 @@ input {
 }
 
 #slider1:checked ~ .elements .inputs #circle1 .input-btn {
-  background-color: blue;
+  background-color: transparent;
   border-color: white;
 }
 #slider2:checked ~ .elements .inputs #circle2 .input-btn {
-  background-color: blue;
+  background-color: transparent;
   border-color: white;
 }
 #slider3:checked ~ .elements .inputs #circle3 .input-btn {
-  background-color: blue;
+  background-color: transparent;
   border-color: white;
 }
 #slider4:checked ~ .elements .inputs #circle4 .input-btn {
-  background-color: blue;
+  background-color: transparent;
   border-color: white;
 }
 .text-item{

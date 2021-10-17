@@ -18,6 +18,7 @@ input {
   border-radius: 2vw;
 }
 .img {
+  transition: 1s;
   display: block;
   max-width: 100%;
 }
@@ -44,4 +45,32 @@ input {
   border: 0.190rem solid cyan;
   border-radius: 50%;
 }
+#slider1:checked ~ .slider .img{
+  transform: translateX(0%);
+}
+#slider2:checked ~ .slider .img {
+  transform: translateX(-100%);
+}
+#slider3:checked ~ .slider .img {
+  transform: translateX(-200%);
+}
+#slider4:checked ~  .slider .img {
+  transform: translateX(-300%);
+}
 
+#slider1:checked ~ .elements .inputs #circle1 .input-btn {
+  background-color: blue;
+  border-color: white;
+}
+#slider2:checked ~ .elements .inputs #circle2 .input-btn {
+  background-color: blue;
+  border-color: white;
+}
+#slider3:checked ~ .elements .inputs #circle3 .input-btn {
+  background-color: blue;
+  border-color: white;
+}
+#slider4:checked ~ .elements .inputs #circle4 .input-btn {
+  background-color: blue;
+  border-color: white;
+}

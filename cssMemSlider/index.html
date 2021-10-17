@@ -4,11 +4,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cssMemSlider</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link href="style.css" rel="stylesheet" type="text/css">
   <link href="normalize.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  
+    <div class="container">
+      <div class="slider">
+        <img class="img" src="assets/images/1.webp" alt="1">          
+        <img class="img" src="assets/images/2.webp" alt="2">          
+        <img class="img" src="assets/images/3.webp" alt="3">     
+        <img class="img" src="assets/images/4.webp" alt="4">         
+      </div>
+      <div class="elements">
+        <div class="text-wrapper">
+          <div class="text-item">
+            Meme № 1
+          </div>
+        </div>
+          <div class="inputs">
+            <label for="slider1" class="label">
+              <div class="input-btn"></div>
+            </label>
+            <label for="slider2" class="label">
+              <div class="input-btn"></div>
+            </label>
+            <label for="slider3" class="label">
+              <div class="input-btn"></div>
+            </label>
+            <label for="slider4" class="label">
+              <div class="input-btn"></div>
+            </label>
+          </div>
+      </div>
+      <input type="radio" name="slider" class="slider1" checked>
+      <input type="radio" name="slider" class="slider2">
+      <input type="radio" name="slider" class="slider3">
+      <input type="radio" name="slider" class="slider4">
+    </div>    
 </body>
 </html>

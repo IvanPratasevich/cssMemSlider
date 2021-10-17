@@ -44,6 +44,10 @@ input {
   width: 1rem;
   border: 0.190rem solid cyan;
   border-radius: 50%;
+  transition: 1s;
+}
+.input-btn:hover{
+  border: 0.190rem solid green;
 }
 #slider1:checked ~ .slider .img{
   transform: translateX(0%);
@@ -116,4 +120,24 @@ input {
       transform: translateX(0%);
     }
 }
-
+@media (max-width: 648px) {
+  .container{
+    width: 80vw;
+  }
+  .elements{
+    flex-direction: column;
+  }
+  .inputs{
+    order: 1;
+  }
+  .text-wrapper{
+    order: 2;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 464px) {
+  .container{
+    width: 90vw;
+  }
+}

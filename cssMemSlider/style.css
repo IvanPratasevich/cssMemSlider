@@ -18,7 +18,7 @@ input {
   border-radius: 2vw;
 }
 .img {
-  transition: 1s;
+  transition: 1.2s;
   display: block;
   max-width: 100%;
 }
@@ -74,3 +74,46 @@ input {
   background-color: blue;
   border-color: white;
 }
+.text-item{
+  display: none;
+}
+#slider1:checked ~ .elements .text-wrapper #item1 {
+  display: block;
+  animation: 1.2s ease slide-left-to-right;
+}
+#slider2:checked ~ .elements .text-wrapper #item2 {
+  display: block;
+  animation: 1.2s ease slide-left-to-right;
+}
+#slider3:checked ~ .elements .text-wrapper #item3 {
+  display: block;
+  animation: 1.2s ease slide-left-to-right;
+}
+#slider4:checked ~ .elements .text-wrapper #item4 {
+  display: block;
+  animation: 1.2s ease slide-left-to-right;
+}
+@keyframes slide-left-to-right {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(8%);
+    opacity: 0.4;
+  }
+  65% {
+      transform: translateX(-6%);
+      opacity: 0.6;
+  }
+  80% {
+      transform: translateX(6%);
+  }
+  95% {
+      transform: translateX(-3%);
+    }           
+  100% {
+      transform: translateX(0%);
+    }
+}
+

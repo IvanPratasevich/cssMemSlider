@@ -138,8 +138,8 @@ input {
   }
   .text-wrapper{
     order: 2;
-    text-align: center;
     margin-top: 1rem;
+    align-self: flex-start;
   }
 }
 @media (max-width: 464px) {
